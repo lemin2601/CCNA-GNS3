@@ -1,5 +1,5 @@
 ##Hướng dẫn cấu hình RIP v2 mạng bên dưới
-
+```
 >![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/RIP-v2/screenshot.png)
 >
 >##==========R1==================
@@ -111,5 +111,4 @@
 >hosts 6996hosts <(8192 = 2^13)
 >172.16.0.0 -- 172.16.(8192/256-1).255/ 16-(32-16-13) = 19 
 >
->
->
+```
