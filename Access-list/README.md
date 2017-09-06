@@ -15,7 +15,90 @@
 - Hosts from Internet can not initiate the TCP connections to the inside hosts, except Web access to
 the servers: 10.10.1.2/24 and 10.10.2.2/24
 - Other traffics are allowed
+# Routing 
+## ===============WEST===================
+```
+conf t
+inter loopback 1
+ip add 10.10.1.1 255.255.255.0
+no shut
+inter loopback 2
+ip add 10.10.2.1 255.255.255.0
+no shut
+inter s0/0
+ip add 172.16.3.1 255.255.255.0
+no shut
+exit
+router rip
+version 2
+network 10.10.1.0
+network 10.10.2.0
+network 172.16.3.1
+no auto
+exit
+exit
+wr
+```
+## ============= East ===================
+```
+conf t
+inter loopback 3
+ip add 10.10.3.1 255.255.255.0
+no shut
+inter loopback 4
+ip add 10.10.4.1 255.255.255.0
+no shut
+inter s0/1
+ip add 172.16.4.1 255.255.255.0
+no shut
+exit
+router rip
+version 2
+network 10.10.3.0
+network 10.10.4.0
+network 172.16.4.1
+no auto
+exit
+exit
+wr
+```
+## ====================Geateway =============
+```
+conf t
+interf f1/0
+ip add 16.19.16.19 255.255.255.0
+no shut
+inter s0/0
+ip add 172.16.3.2 255.255.255.0
+no shut
+inter s0/1
+ip add 172.16.4.2 255.255.255.0
+no shut
+exit
+ip route 0.0.0.0 0.0.0.0 f1/0
+router rip
+version 2
+redistribute static
+network 172.16.3.0
+network 172.16.4.0
+no auto-summary
+exit
+exit
+wr
+```
+## ======INter net=================
+```
+conf t
+interf f1/0
+ip add 16.19.16.20 255.255.255.0
+no shut
+exit
+ip route 0.0.0.0 0.0.0.0 f1/0
+exit
+wr
 
+
+# Access-list
 ## ======Gate Way
 ```
 conf t
