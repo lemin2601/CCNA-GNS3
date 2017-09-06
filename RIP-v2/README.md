@@ -3,7 +3,7 @@
 ![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/RIP-v2/screenshot.png)
 
 ##==========R1==================
-conf t
+('conf t
 interface loopback 1
 ip address 172.16.0.1 255.255.224.0
 no shut
@@ -22,7 +22,7 @@ network 172.16.60.12
 no auto-summary
 exit
 exit
-wr
+wr')
 
 ##===========R2====================
 conf t
