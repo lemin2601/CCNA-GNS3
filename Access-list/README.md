@@ -97,9 +97,9 @@ ip route 0.0.0.0 0.0.0.0 f1/0
 exit
 wr
 
-
+```
 # Access-list
-## ======Gate Way
+## ======Gate Way =====
 ```
 conf t
 no ip access-list ext 100 !Cog s0/0 in
