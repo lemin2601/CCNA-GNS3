@@ -1,8 +1,8 @@
-#**Hướng dẫn cấu hình RIP v2 mạng bên dưới**
+# **Hướng dẫn cấu hình RIP v2 mạng bên dưới**
 
 ![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/RIP-v2/screenshot.png)
 
-##==========R1==================
+## ==========R1==================
 ```
 conf t
 interface loopback 1
@@ -47,7 +47,7 @@ exit
 exit
 wr
 ```
-##===========R3====================
+## ===========R3====================
 ```conf t
 interface loopback 3
 ip add 172.16.48.1 255.255.248.0
@@ -69,7 +69,7 @@ exit
 exit
 wr
 ```
-##===========R4====================
+## ===========R4====================
 ```conf t
 interface loopback 4
 ip add 172.16.56.1 255.255.252.0
@@ -96,7 +96,7 @@ exit
 exit
 wr
 ```
-##===========IPS===============
+## ===========IPS===============
 ```conf t
 interf f1/0
 ip add 6.9.6.1 255.255.255.0
@@ -106,7 +106,7 @@ ip route 0.0.0.0 0.0.0.0 f1/0
 exit
 wr
 ```
-##===========================
+## ===========================
 1```72.16.0.0/16
 hosts 6996hosts <(8192 = 2^13)
 172.16.0.0 -- 172.16.(8192/256-1).255/ 16-(32-16-13) = 19 
