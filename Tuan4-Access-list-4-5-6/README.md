@@ -1,6 +1,6 @@
 # **Hướng dẫn cấu hình Access-list mạng bên dưới**
 
-![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan4-Access-list-4-5-6/screenshot.png)
+![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan4-Access-list-4-5-6/screenshoot.png)
 
 ## Assignment 4
 !Refer to the above network diagram, after finishing the routing between subnets (you can use any routing
