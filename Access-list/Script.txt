@@ -19,6 +19,7 @@ no auto
 exit
 exit
 wr
+
 ============= East ===================
 conf t
 inter loopback 3
