@@ -5,3 +5,7 @@
 # Kết quả
 ![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/AAA-TACACS+-RADIUS/result.jpg)
 
+
+# Link download ACSv4.2 (Phần mềm hỗ trợ AAA trên win server 2003)
+https://goo.gl/NzQkBP
+
