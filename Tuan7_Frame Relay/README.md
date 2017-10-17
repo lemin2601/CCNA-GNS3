@@ -1,10 +1,10 @@
 # **Hướng dẫn cấu hình Access-list mạng bên dưới**
 # Thiết lập mạng như sơ đồ bên dưới**
-![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan7_Frame\ Relay/screenshoot.png)
+![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan7_Frame%20Relay/screenshoot.png)
 
 # Kết quả
 "show ip route" có đầy đủ các mạng
-![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan7_Frame\ Relay/result.PNG)
+![Settings Window](https://raw.githubusercontent.com/lemin2601/CCNA-GNS3/master/Tuan7_Frame%20Relay/result.PNG)
 # Script
 ## ==========HANOI==================
 ```
